@@ -27,7 +27,7 @@ public class FilesOfFolderTests {
     folder.mkdir();
 
     for (int i = 1; i <= CANT; i++) {
-      File file = new File(PATH + "/" + "file" + i + ".txt");
+      File file = new File(PATH + File.separator + "file" + i + ".txt");
       file.createNewFile();
       listOfFiles[i - 1] = file;
     }
